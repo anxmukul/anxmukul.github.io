@@ -136,53 +136,16 @@ ul li a:hover {
   margin-bottom: 2rem;
 }
 
-/* .action__btns {
-  display: flex;
-  gap: 1rem;
-}
-
-.action__btns button {
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  padding: 1rem 2rem;
-  outline: none;
-  border: 2px solid var(--primary-color);
-  border-radius: 10px;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.hire__me {
-  background-color: var(--primary-color);
-  color: #ffffff;
-}
-
-.hire__me:hover {
-  background-color: var(--primary-color-dark);
-}
-
-.portfolio {
-  color: var(--primary-color);
-} */
-
-.portfolio:hover {
-  background-color: var(--primary-color-dark);
-  color: #ffffff;
-}
-
-.image img {
-  width: min(25rem, 90%);
-  border-radius: 100%;
-}
-
 .exp-heading {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--text-dark);
+ /* margin-bottom: 8px; */
+  border-bottom: solid 2px #e1e1e1;
   /* margin-bottom: 1rem; */
 }
+
 .exp-container {
   min-height: 30vh;
   /* height: auto; */
@@ -193,6 +156,13 @@ ul li a:hover {
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
 }
+.company-name a{
+  font-weight: 600;
+}
+/* .company-name span{
+  font-weight: 1em;
+} */
+
 
 .item {
   display: flex;
@@ -205,6 +175,40 @@ ul li a:hover {
 .designation{
   font-weight: 600;
 }
+
+
+.pro-heading {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  border-bottom: solid 2px #e1e1e1;
+  /* margin-bottom: 1rem; */
+}
+
+.project-container {
+  min-height: 15vh;
+  /* height: auto; */
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+.project-name {
+  font-weight: 400;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f6f3fc;
+  padding: 10px;
+  border-radius: 40px;
+}
+
 @media (width < 750px) {
   nav .checkbox {
     display: block;
@@ -244,5 +248,9 @@ ul li a:hover {
     text-align: center;
     grid-template-columns: repeat(1, 1fr);
   }
-
+  .project-container {
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
