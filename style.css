@@ -168,11 +168,6 @@ ul li a:hover {
   color: #ffffff;
 }
 
-.image {
-  display: grid;
-  place-items: center;
-}
-
 .image img {
   width: min(25rem, 90%);
   border-radius: 100%;
@@ -207,10 +202,6 @@ ul li a:hover {
     padding: 10rem 1rem 5rem 1rem;
     text-align: center;
     grid-template-columns: repeat(1, 1fr);
-  }
-
-  .image {
-    grid-area: 1/1/2/2;
   }
 
   .action__btns {
