@@ -1,33 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
+:root {
+  --primary-color: #a855f7;
+  --primary-color-dark: #9333ea;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
 
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
 nav {
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
+  background-color: #ffffff;
   z-index: 99;
 }
+
+.nav__content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 nav .logo a {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3s;
 }
+nav .logo a:hover {
+  color: var(--primary-color-dark);
+}
+
 nav .checkbox {
   display: none;
 }
@@ -37,76 +61,135 @@ nav input {
 }
 nav .checkbox i {
   font-size: 2rem;
+  color: var(--primary-color);
   cursor: pointer;
 }
 
-.navbar {
-  min-height: 90px;
+ul {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
 }
-.nav-menu {
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.section {
+  background-color: var(--extra-light);
+}
+
+.section__container {
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
-}
-.nav-link {
-  transition: 0.7s ease;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.nav-link:hover {
-  color: dodgerblue;
-}
-
-main .main-div {
-  position: relative;
-  top: 90px;
-  background-color: #faf5ff;
-  min-height: 50vh;
-  width: 100%;
-  margin: 0 auto;
-  padding: 10px 40px;
-}
-
-main .greeting {
+.subtitle {
   letter-spacing: 2px;
-  color: #6b7280;
+  color: var(--text-light);
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
-main .header {
+
+.title {
   font-size: 2.5rem;
   font-weight: 400;
   line-height: 3rem;
-  color: #1f2937;
+  color: var(--text-dark);
   margin-bottom: 1rem;
 }
 
-main .title span {
-  font-weight: 800;
+.title span {
+  font-weight: 600;
 }
-main .description {
+
+.description {
   line-height: 1.5rem;
-  color: #6b7280;
+  color: var(--text-light);
   margin-bottom: 2rem;
+}
+
+.action__btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.action__btns button {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.hire__me {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.hire__me:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.portfolio {
+  color: var(--primary-color);
+}
+
+.portfolio:hover {
+  background-color: var(--primary-color-dark);
+  color: #ffffff;
+}
+
+.image {
+  display: grid;
+  place-items: center;
+}
+
+.image img {
+  width: min(25rem, 90%);
+  border-radius: 100%;
 }
 
 @media (width < 750px) {
   nav .checkbox {
     display: block;
   }
-  .nav-menu {
-    gap: 40px;
-  }
+
   ul {
     position: absolute;
     width: 100%;
-    background-color: #faf5ff;
+    height: calc(100vh - 85px);
     left: -100%;
-    top: 90px;
+    top: 85px;
+    background-color: var(--extra-light);
     flex-direction: column;
     justify-content: center;
     gap: 3rem;
@@ -115,10 +198,22 @@ main .description {
   nav #check:checked ~ ul {
     left: 0;
   }
- 
-  .main-div {
-    padding: 10rem 1rem 5rem 1rem;
-    text-align: center;
+
+  ul li a {
+    font-size: 1.25rem;
   }
 
+  .section__container {
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image {
+    grid-area: 1/1/2/2;
+  }
+
+  .action__btns {
+    margin: auto;
+  }
 }
