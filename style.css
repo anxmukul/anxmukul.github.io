@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+nav .checkbox {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+nav .checkbox i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.navbar {
+  min-height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: dodgerblue;
+}
+
+@media (width < 750px) {
+  nav .checkbox {
+    display: block;
+  }
+  .nav-menu {
+    gap: 40px;
+}
+  ul {
+    position: absolute;
+    width: 100%;
+    background-color: #faf5ff;;
+    left: -100%;
+    top: 85px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+
+}
