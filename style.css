@@ -210,6 +210,61 @@ ul li a:hover {
   border-radius: 40px;
 }
 
+
+
+.contact-container {
+  min-height: 15vh;
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.contact-heading {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  border-bottom: solid 2px #e1e1e1;
+}
+
+
+.contact-name {
+  font-weight: 400;
+  color:#9333ea;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #f6f3fc;
+  padding: 10px;
+  border-radius: 40px;
+}
+
+.email{
+  padding: 5px 0;
+}
+.phone{
+  padding: 5px 0;
+}
+
+.social-links .ph-bold{
+  font-size: 1.5rem;
+  line-height: 3rem;
+  padding-left: 2rem;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+/* .ph-bold:hover{
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+} */
+
 @media (width < 750px) {
   nav .checkbox {
     display: block;
@@ -250,6 +305,11 @@ ul li a:hover {
     grid-template-columns: repeat(1, 1fr);
   }
   .project-container {
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-container {
     padding: 1rem 1rem 1rem 1rem;
     text-align: center;
     grid-template-columns: repeat(1, 1fr);
