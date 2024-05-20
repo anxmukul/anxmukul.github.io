@@ -1,157 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Mukul's Home</title>
-  </head>
-  <body>
-    <nav>
-      <div class="nav__content">
-        <div class="logo"><a href="#">Mukul</a></div>
-        <label for="check" class="checkbox">
-          <i class="ri-menu-line"></i>
-        </label>
-        <input type="checkbox" name="check" id="check" />
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="/assets/Mukul_Kumar_Resume.pdf">Resume</a></li>
-          <li><a href="#exp">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Mukul's Home</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav__content">
+      <div class="logo"><a href="#">Mukul</a></div>
+      <label for="check" class="checkbox">
+        <i class="ri-menu-line"></i>
+      </label>
+      <input type="checkbox" name="check" id="check" />
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="/assets/Mukul_Kumar_Resume.pdf">Resume</a></li>
+        <li><a href="#exp">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="main">
+    <div class="main__container" id="about">
+      <div class="content">
+        <p class="subtitle">HELLO</p>
+        <h1 class="title">
+          I'm <span>Mukul Kumar<br /></span>
+        </h1>
+        <p class="description">
+          Welcome to my portfolio! I'm a dedicated software developer with a strong background in
+          building and managing backend systems. With experience gained through various internships and projects, I am
+          skilled in Java, JavaScript, Golang, and C++ and proficient with frameworks such as React.js, Spring Boot,
+          and Express.js. Additionally, I have expertise in tools like Git, Kafka, and Redis. Passionate about
+          continuous learning and contributing to impactful projects, I am eager to connect and discuss technology,
+          innovative solutions, and potential collaborations.
+        </p>
       </div>
-    </nav>
-    <section class="main">
-      <div class="main__container" id="about">
-        <div class="content">
-          <p class="subtitle">HELLO</p>
-          <h1 class="title">
-            I'm <span>Mukul Kumar<br />a</span> Web Developer
-          </h1>
+    </div>
+    <section class="experience" id="exp">
+      <h2 class="exp-heading">Work Experience</h2>
+      <div class="exp-container">
+        <div class="item">
+          <p class="company-name">
+            <a href="https://www.engati.com/" target="_blank" rel="noopener noreferrer">Engati</a><span
+              class="date">(Nov 2023 - Present)</span>
+          </p></br>
           <p class="description">
-            Welcome to my portfolio! I'm Mukul, a skilled and creative web
-            developer with a passion for creating beautiful, responsive, and
-            user-friendly websites. I've worked on a variety of web projects
-            using React.js, Veu.js, HTML, and CSS. On the backend side, I have
-            experience in Node.js, Java, and Golang. I'm adept at building
-            scalable and secure server-side systems that power web applications.
+            <span class="designation">Software Developer Intern:</span>
+            Developed a Chrome extension to send WhatsApp broadcasts directly from the browser to phone numbers listed
+            in Google Sheets. Utilized JavaScript for the user interface and task management, including sheet
+            downloading, and employed Chrome local storage for token management. Implemented various microservices to
+            ensure seamless operations, such as uploading sheets to S3, monitoring with Kafka, updating databases, and
+            broadcasting messages to designated phone numbers.
+          </p>
+        </div>
+        <div class="item">
+          <p class="company-name">
+            <a href="https://www.highradius.com/" target="_blank" rel="noopener noreferrer">HighRadius
+              Corporation</a><span class="date">(Jan 2022 - Apr
+              2022)</span>
+          </p></br>
+          <p class="description">
+            <span class="designation">Fullstack Developer Intern:</span> During my internship, I contributed to the
+            development of a comprehensive full-stack web-based AI-enabled Fintech B2B Invoice Management application.
+            This project involved utilizing technologies such as React.js, JDBC, Java, Servlet, and MySQL. The
+            application featured responsive receivable dashboards, robust search functionalities for invoices, and
+            complete CRUD operations to manage invoice data effectively.
+          </p>
+        </div>
+        <div class="item">
+          <p class="company-name">
+            <a href="https://github.com/asity-tech" target="_blank" rel="noopener noreferrer">Asity Tech</a><span
+              class="date">(Nov 2021 - Dec 2022)</span>
+          </p></br>
+          <p class="description">
+            <span class="designation">Backend Developer: </span>Worked as a backend developer for a open source
+            organisation Asity. Created API for the Signup page
+            using Node.js, Express.js, and Postgres with the basic facility of
+            deleting and editing the credentials of the user. Also involved in
+            different project analysis and design.
           </p>
         </div>
       </div>
-      <section class="experience" id="exp">
-        <h2 class="exp-heading">Work Experience</h2>
-        <div class="exp-container">
-          <div class="item">
-            <p class="company-name">
-              <a href="https://www.highradius.com/">HighRadius Corporation</a
-              ><span class="date">(Jan 2022 - Apr 2022)</span>
-            </p></br>
-            <p class="description">
-              <span class="designation">Fullstack Developer Intern:</span> I was involved in
-              creating a full stack web-based AI-Enabled Fintech B2B Invoice
-              Management Web Application using React.js, JDBC, Java, Servlet,
-              and Mysql. Which have responsive receivable dashboards, searching
-              operations on invoices, with CRUD operations.
-            </p>
-          </div>
-          <div class="item">
-            <p class="company-name">
-              <a href="https://github.com/asity-tech">Asity Tech</a
-              ><span class="date">(Nov 2021 - Dec 2022)</span>
-            </p></br>
-            <p class="description">
-              <span class="designation">Backend Developer: </span>Worked as a backend developer for a open source organisation Asity. Created API for the Signup page
-              using Node.js, Express.js, and Postgres with the basic facility of
-              deleting and editing the credentials of the user. Also involved in
-              different project analysis and design.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="projects">
-        <h2 class="pro-heading">My Projects</h2>
-        <div class="project-container">
-          <div class="item">
-            <p class="project-name">
-             Car Parking App  <span>
-            <a href="http://web-production-7bae3.up.railway.app/"><i class="ph-bold ph-link"></i></a>
-            <a href="https://github.com/anxmukul/car-parking-system-api"> <i class="ph-bold ph-github-logo"></i></a>
-             </span>
-            </p>
-            <p class="description">
-              Created RESTful APIs for car parking system, which allows the customers to use the parking lot
-              without any human intervention.The system has abilities to initialize the parking lot, expand the parking lot,
-              park a car, free parking slot, fetch occupied slots, and different fetch methods to get car details.
-            </p>
-          </div>
-          <div class="item">
-            <p class="project-name">
-             ToDo Application  <span>
-            <a href="https://github.com/anxmukul/todo"> <i class="ph-bold ph-github-logo"></i></a>
-             </span>
-            </p>
-            <p class="description">
-              Created a CLI Todo application in Golang that facilitates us creating, searching, and deleting todo.
-              This application uses Postgres for data storage and is based on MVC design pattern. Achieved 95% total test coverage.
-            </p>
-          </div>
-          <div class="item">
-            <p class="project-name">
-              Blogging Web Application  <span>
-                <a href="https://shielded-ravine-97656.herokuapp.com/"><i class="ph-bold ph-link"></i></a>
-            <a href="https://github.com/anxmukul/nodejs-server"><i class="ph-bold ph-github-logo"></i></a>
-              </span>
-            </p>
-            <p class="description">
-              Developed a blogging web application that has basic blogging functions, with password based
-              authentication.
-            </p>
-            </div>
-            <div class="item">
-              <p class="project-name">
-                Notes Taking Web App  <span>
-                  <a href="https://agile-reaches-30425.herokuapp.com/"><i class="ph-bold ph-link"></i></a>
-              <a href="https://github.com/anxmukul/api-server-ui"><i class="ph-bold ph-github-logo"></i></a>
-                </span>
-              </p>
-              <p class="description">
-                Developed a notes taking web application which facilitates CRUD operations. It have username, password based authentication.
-              </p>
-              </div>
-        </div>
-      </section>
-      <section class="contact" id="contact">
-        <h3 class="contact-heading">Contact Me</h3>
-        <div class="contact-container">
-          <div class="contact-item">
-            <h3 class="contact-name">Email Me At </h3>
-            <p class="email">
-            <a href="mailto:anxmukul@gmail.com"><i class="ph-bold ph-envelope-simple"></i></a> anxmukul@gmail.com
-            </p>
-            <p class="pnone"><i class="ph-bold ph-phone-call"></i> +91-9523138406</p>
-          </div>
-          <div class="contact-item">
-            <h3 class="contact-name">Find Me On </h3>
-            <div class="social-links">
-              <a href="www.linkedin.com/in/anxmukul" target="_blank" rel="noopener noreferrer"><i class="ph-bold ph-linkedin-logo"></i></a>
-              <a href="https://twitter.com/anxmukul?t=WqxCQbQb-BSv4KMsgaGbWQ&s=08" target="_blank" rel="noopener noreferrer"><i class="ph-bold ph-twitter-logo"></i></a> 
-              <a href="https://github.com/anxmukul"><i class="ph-bold ph-github-logo" target="_blank" rel="noopener noreferrer"></i></a>
-            </div>
-              </div>
-        </div>
-      </section>
     </section>
-  </body>
+    <section class="projects">
+      <h2 class="pro-heading">My Projects</h2>
+      <div class="project-container">
+        <div class="item">
+          <p class="project-name">
+            Car Parking App <span>
+              <a href="http://web-production-7bae3.up.railway.app/"><i class="ph-bold ph-link"></i></a>
+              <a href="https://github.com/anxmukul/car-parking-system-api"> <i class="ph-bold ph-github-logo"></i></a>
+            </span>
+          </p>
+          <p class="description">
+            Created RESTful APIs for car parking system, which allows the customers to use the parking lot
+            without any human intervention.The system has abilities to initialize the parking lot, expand the parking
+            lot,
+            park a car, free parking slot, fetch occupied slots, and different fetch methods to get car details.
+          </p>
+        </div>
+        <div class="item">
+          <p class="project-name">
+            ToDo Application <span>
+              <a href="https://github.com/anxmukul/todo"> <i class="ph-bold ph-github-logo"></i></a>
+            </span>
+          </p>
+          <p class="description">
+            Created a CLI Todo application in Golang that facilitates us creating, searching, and deleting todo.
+            This application uses Postgres for data storage and is based on MVC design pattern. Achieved 95% total test
+            coverage.
+          </p>
+        </div>
+        <div class="item">
+          <p class="project-name">
+            Blogging Web Application <span>
+              <a href="https://shielded-ravine-97656.herokuapp.com/"><i class="ph-bold ph-link"></i></a>
+              <a href="https://github.com/anxmukul/nodejs-server"><i class="ph-bold ph-github-logo"></i></a>
+            </span>
+          </p>
+          <p class="description">
+            Developed a blogging web application that has basic blogging functions, with password based
+            authentication.
+          </p>
+        </div>
+        <div class="item">
+          <p class="project-name">
+            Notes Taking Web App <span>
+              <a href="https://agile-reaches-30425.herokuapp.com/"><i class="ph-bold ph-link"></i></a>
+              <a href="https://github.com/anxmukul/api-server-ui"><i class="ph-bold ph-github-logo"></i></a>
+            </span>
+          </p>
+          <p class="description">
+            Developed a notes taking web application which facilitates CRUD operations. It have username, password based
+            authentication.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h3 class="contact-heading">Contact Me</h3>
+      <div class="contact-container">
+        <div class="contact-item">
+          <h3 class="contact-name">Email Me At </h3>
+          <p class="email">
+            <a href="mailto:anxmukul@gmail.com"><i class="ph-bold ph-envelope-simple"></i></a> anxmukul@gmail.com
+          </p>
+          <p class="pnone"><i class="ph-bold ph-phone-call"></i> +91-9523138406</p>
+        </div>
+        <div class="contact-item">
+          <h3 class="contact-name">Find Me On </h3>
+          <div class="social-links">
+            <a href="www.linkedin.com/in/anxmukul" target="_blank" rel="noopener noreferrer"><i
+                class="ph-bold ph-linkedin-logo"></i></a>
+            <a href="https://twitter.com/anxmukul?t=WqxCQbQb-BSv4KMsgaGbWQ&s=08" target="_blank"
+              rel="noopener noreferrer"><i class="ph-bold ph-twitter-logo"></i></a>
+            <a href="https://github.com/anxmukul"><i class="ph-bold ph-github-logo" target="_blank"
+                rel="noopener noreferrer"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</body>
+
 </html>
